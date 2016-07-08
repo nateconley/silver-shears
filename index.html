@@ -1,51 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Silver Shears Salon</title>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
+	<head>
+		<title>Silver Shears Salon</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel="stylesheet">
+		<!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Poiret+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
 
-<header>
-	<nav id="main-nav">
-		<ul>
-			<a href=""><li>Services</li></a>
-			<a href=""><li>Products</li></a>
-			<a href=""><li>Bio</li></a>
-			<a href=""><li>Contact</li></a>
-		</ul>
-	</nav>
-	<div id="circle-logo"></div>
-	<div id="jumbotron">
-		<h1>Silver Shears Salon</h1>
-		<div id="call-button">417-439-3418</div>
+	<header>
+		<div id="small-size-top"></div>
+		<nav id="main-nav">
+			<ul>
+				<a href="#services"><li>Services</li></a>
+				<a href="#about"><li>About</li></a>
+				<a href="#products"><li>Products</li></a>
+				<a href="#contact"><li id="contact-list-item">Contact</li></a>
+			</ul>
+		</nav>
+		<div id="circle-logo">
+			<img src="photos/circle-logo.png" alt="Silver Shears Salon circle logo">
+		</div>
+		<div id="jumbotron">
+			<h1>Silver Shears Salon</h1>
+			<h2>Great hair doesn't happen by chance. It happens by appointment.</h2>
+			<div id="call-button"><a href="tel:4174393418"><i class="fa fa-phone"></i>417-439-3418</a></div>
+	</header>
+	<div id="main-content">
+		<section id="services">
+			<h2>Services</h2>
+			<div class="service-table">
+				<h3>Hair</h3>
+				<p>Haircut <b>$15</b></p>
+				<p>Haircut with Style <b>$20</b></p>
+			</div>
+			<div class="service-table">
+				<h3>Perms</h3>
+				<p>Starting at <b>$55</b></p>
+			</div>
+			<div class="service-table">
+				<h3>Color</h3>
+				<p>Starting at <b>$55</b></p>
+			</div>
+			<div class="service-table">
+				<h3>Waxing</h3>
+				<p>Brow <b>$10</b></p>
+				<p>Lip <b>$10</b></p>
+				<p>Chin <b>$10</b></p>
+			</div>
+		</section>
+		<section id="about">
+			<h2>About</h2>
+			<img src="./photos/salon.jpg" alt="Silver Shears Salon interior" />
+			<p>Believe in yourself and you will be unstoppable...</p>
+			<p>This came to mind when I decide at 40 years old to quit my job, and return to school. Cosmetology school. Two years later I am still learning. I'm attending classes regularly to keep up with the trends and new styles. I attended Barbering School in March 2016. I will  be a certified Cosmetologist with a Barber Cross over in July 2016. I'm very new in this industry, but excited about all the changes this industry has to offer.</p>
+			<p>I enjoy people. I want to get to know each and everyone of my clients, and hearing about their life adventures. I hope I get the opportunity to be  the person you want to share your stories with!</p>
+		</section>
+		<section id="products">
+			<h2>Products</h2>
+			<img id="product-image" src="./photos/products.jpg" alt="Silver Shears Salon products" />
+			<a href="https://www.allnutrient.com/" target="_blank"><img id="all-nutrient-logo" src="photos/all-nutrient-logo.png" alt="All Nutrient logo" /></a>
+			<p>We use All-Nutrient products. These products are <b>100% Vegan</b>, <b>Gluten-Free</b>, <b>Cruelty-Free</b>, and <b>Sulfate-Free.</b></p>
+			<p>These products feature a natural, vegetable-derived base that's infused with active keratin micro-proteins, amino acids, vitamins and minerals, essential fatty acids, and natural oils - all of the building blocks of hair. As it colors, it reconstructs the hair from the inside out, adding strength and moisture. It also uses a very low percent of ammonia. This haircolor is made with the most organic ingredients possible.</p>
+		</section>
 	</div>
-</header>
-
-<section>
-	<h2>Bio</h2>
-	<p>Believe in yourself and you will be unstoppable...</p>
-	<p>This came to mind when I decide at 40 years old to quit my job, and return to school. Cosmetology school. Two years later I am still learning. I'm attending classes regularly to keep up with the trends and new styles. I attended Barbering School in March 2016. I will  be a certified Cosmetologist with a Barber Cross over in July 2016. I'm very new in this industry, but excited about all the changes this industry has to offer.</p>
-	<p>I enjoy people. I want to get to know each and everyone of my clients, and hearing about their life adventures. I hope I get the opportunity to be  the person you want to share your stories with!</p>
-</section>
-
-<section>
-	<h2>Services</h2>
-</section>
-
-<section>
-	<h2>Products</h2>
-</section>
-
-
-<footer>
-	<div id="copyright">
-		<p>&copy; 2016 Silver Shears Salon</p>
-		<p>Website by <a href="http://nateconley.com">Nate Conley</a>
-	</div>
-</footer>
-
-
-</body>
+	<footer id="contact">
+		<div id=map>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.248665304113!2d-94.5092086841702!3d37.07538397989275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c87b0e8ab52e97%3A0xd6b6c244e2f49e99!2sSilver+Shears+Salon!5e0!3m2!1sen!2sus!4v1467945788833" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div id="hours">
+			<p>Monday: &nbsp; <span class="closed">Closed</span></p>
+			<p>Tuesday: &nbsp; <span class="closed">Closed</span></p>
+			<p>Wednesday: &nbsp; 8:30 - 5:00</p>
+			<p>Thursday: &nbsp; 8:30 - 5:00</p>
+			<p>Friday: &nbsp; 8:30 - 5:00</p>
+			<p>Saturday: &nbsp; 9:00 - 1:00</p>
+			<p>Sunday: &nbsp; <span class="closed">Closed</span></p>
+		</div>
+		<div id="contact-info">
+			<p><a href="https://www.google.com/maps?ll=37.07648,-94.509573&z=14&t=m&hl=en-US&gl=US&mapclient=embed&cid=15471767170999164569" target="_blank"><i class="fa fa-map-marker"></i> 1419 Iowa Ave. Joplin, MO</a> &nbsp; | &nbsp; <a href="tel:4174393418"><i class="fa fa-phone"></i> 417-439-3418</a></p>
+		</div>
+		<div id="copyright">
+			<p>&copy; 2016 Silver Shears Salon</p>
+			<p>Website by <a href="http://nateconley.com">Nate Conley</a>
+		</div>
+	</footer>
+	</body>
 </html>

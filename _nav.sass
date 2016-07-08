@@ -14,4 +14,17 @@ nav#main-nav
 			color: $dark-grey
 			font-weight: 700
 			font-size: 1.5rem
+			line-height: 75%
+			&:hover
+				color: $red
+	@media screen and (max-width: $break-medium)
+		height: auto
+		clear: both
+		ul
+			li
+				width: 100%
+				line-height: normal
+				&#contact-list-item
+					padding-bottom: 1rem
+
 

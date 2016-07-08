@@ -1,0 +1,72 @@
+#main-content
+	h2
+		text-align: center
+		font-size: 2rem
+	img
+		width: 40%
+		height: auto
+	#services
+		margin-top: 1rem
+		.service-table
+			width: 22%
+			float: left
+			border: 0.125rem solid $dark-grey
+			box-sizing: border-box
+			margin-right: 4%
+			padding: 0.75rem
+			margin-bottom: 1rem
+			&:last-child
+				margin-right: 0
+			h3
+				text-align: center
+				border-bottom: 0.125rem solid $red
+				margin-bottom: 0.5rem
+				padding-bottom: 0.5rem
+			@media screen and (max-width: $break-medium)
+				width: 45%
+			@media screen and (max-width: $break-small)
+				width: 80%
+				margin: 0 10%
+				margin-bottom: 2rem
+			@media screen and (max-width: $break-medium)
+				&:nth-child(4)
+					clear: both
+	#about
+		clear: both
+		background: $dark-grey
+		color: $white
+		overflow: hidden
+		img
+			float: left
+			margin: 0 10%
+			margin-bottom: 1rem
+		@media screen and (max-width: $break-small)
+			padding-bottom: 2rem
+			img
+				width: 100%
+				height: auto
+				margin: auto
+				margin-bottom: 2rem
+	#products
+		clear: both
+		margin-top: 1rem
+		img#product-image
+			float: right
+			margin: 0 10%
+			margin-bottom: 1rem
+		img#all-nutrient-logo
+			width: 40%
+			margin: auto
+		@media screen and (max-width: $break-small)
+			padding-bottom: 2rem
+			img#product-image
+				width: 100%
+				margin: auto
+				margin-bottom: 2rem
+			img#all-nutrient-logo
+				width: 100%
+
+#services,
+#about,
+#products
+	padding: 0 2rem

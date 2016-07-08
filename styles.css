@@ -384,27 +384,56 @@ nav#main-nav {
       float: left;
       color: #5E5E5E;
       font-weight: 700;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      line-height: 75%; }
+      nav#main-nav ul li:hover {
+        color: #FF0000; }
+  @media screen and (max-width: 700px) {
+    nav#main-nav {
+      height: auto;
+      clear: both; }
+      nav#main-nav ul li {
+        width: 100%;
+        line-height: normal; }
+        nav#main-nav ul li#contact-list-item {
+          padding-bottom: 1rem; } }
 
 #circle-logo {
   position: absolute;
   height: 10rem;
   width: 10rem;
-  border-radius: 50%;
-  background: #5E5E5E;
   margin-left: calc(50% - 5rem);
   top: 2rem; }
+  #circle-logo img {
+    width: 100%;
+    height: 100%; }
+  @media screen and (max-width: 700px) {
+    #circle-logo {
+      top: 1rem; } }
 
 #jumbotron {
-  background: #000000; }
+  background: #000000;
+  padding: 0 2rem;
+  padding-bottom: 5rem;
+  clear: both; }
   #jumbotron h1 {
     margin: 0;
     color: #FFFFFF;
     text-align: center;
+    font-size: 4rem;
     padding-top: 10rem;
-    font-size: 2.5rem; }
+    font-family: "Poiret One", cursive; }
+  #jumbotron h2 {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 400; }
+  @media screen and (max-width: 700px) {
+    #jumbotron {
+      padding-bottom: 4rem; }
+      #jumbotron h1 {
+        padding-top: 4rem; } }
   #jumbotron #call-button {
-    width: 10rem;
+    width: 15rem;
     margin: 1.5rem auto;
     font-size: 1.5rem;
     color: #FFFFFF;
@@ -412,8 +441,158 @@ nav#main-nav {
     border: 0.125rem solid #FF0000;
     padding: 0.25rem;
     background: #5E5E5E; }
+    #jumbotron #call-button i {
+      padding-right: 0.5rem; }
+    #jumbotron #call-button a {
+      color: #FFFFFF;
+      text-decoration: none; }
+      #jumbotron #call-button a:hover {
+        color: #E6E6E6; }
+
+@media screen and (max-width: 700px) {
+  #small-size-top {
+    background: #000000;
+    height: 12rem;
+    width: 100%; } }
+
+#main-content h2 {
+  text-align: center;
+  font-size: 2rem; }
+
+#main-content img {
+  width: 40%;
+  height: auto; }
+
+#main-content #services {
+  margin-top: 1rem; }
+  #main-content #services .service-table {
+    width: 22%;
+    float: left;
+    border: 0.125rem solid #5E5E5E;
+    box-sizing: border-box;
+    margin-right: 4%;
+    padding: 0.75rem;
+    margin-bottom: 1rem; }
+    #main-content #services .service-table:last-child {
+      margin-right: 0; }
+    #main-content #services .service-table h3 {
+      text-align: center;
+      border-bottom: 0.125rem solid #FF0000;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem; }
+    @media screen and (max-width: 700px) {
+      #main-content #services .service-table {
+        width: 45%; } }
+    @media screen and (max-width: 600px) {
+      #main-content #services .service-table {
+        width: 80%;
+        margin: 0 10%;
+        margin-bottom: 2rem; } }
+    @media screen and (max-width: 700px) {
+      #main-content #services .service-table:nth-child(4) {
+        clear: both; } }
+
+#main-content #about {
+  clear: both;
+  background: #5E5E5E;
+  color: #FFFFFF;
+  overflow: hidden; }
+  #main-content #about img {
+    float: left;
+    margin: 0 10%;
+    margin-bottom: 1rem; }
+  @media screen and (max-width: 600px) {
+    #main-content #about {
+      padding-bottom: 2rem; }
+      #main-content #about img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 2rem; } }
+
+#main-content #products {
+  clear: both;
+  margin-top: 1rem; }
+  #main-content #products img#product-image {
+    float: right;
+    margin: 0 10%;
+    margin-bottom: 1rem; }
+  #main-content #products img#all-nutrient-logo {
+    width: 40%;
+    margin: auto; }
+  @media screen and (max-width: 600px) {
+    #main-content #products {
+      padding-bottom: 2rem; }
+      #main-content #products img#product-image {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem; }
+      #main-content #products img#all-nutrient-logo {
+        width: 100%; } }
+
+#services,
+#about,
+#products {
+  padding: 0 2rem; }
 
 footer {
+  padding: 1rem 0;
   background: #000000;
   border-top: 0.25rem solid #FF0000;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  clear: both; }
+  footer a {
+    color: #E6E6E6; }
+  footer p {
+    margin: 0; }
+  footer #copyright {
+    text-align: center;
+    padding: 0.5rem 0;
+    clear: both;
+    font-size: 0.75rem; }
+  footer #contact-info {
+    clear: both;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-top: 0.125rem solid #5E5E5E;
+    border-bottom: 0.125rem solid #5E5E5E;
+    padding: 0.5rem 0; }
+    footer #contact-info a {
+      color: #FFFFFF;
+      text-decoration: none; }
+      footer #contact-info a:hover {
+        color: #E6E6E6; }
+  footer #map {
+    width: 50%;
+    float: left;
+    height: 10rem; }
+  footer #hours {
+    width: 50%;
+    float: left;
+    margin-bottom: 2rem; }
+    footer #hours span.closed {
+      color: #FF0000; }
+    footer #hours p {
+      font-weight: 400; }
+  footer iframe {
+    width: 50%;
+    margin: 0 25%;
+    height: auto;
+    margin-bottom: 2rem; }
+    @media screen and (max-width: 700px) {
+      footer iframe {
+        width: 80%;
+        margin: 0 10% 2rem 10%; } }
+
+#store-hours {
+  color: #FFFFFF;
+  display: flex; }
+  #store-hours .store-hours-day {
+    display: inline-block;
+    margin: 1rem; }
+    #store-hours .store-hours-day .day-selector {
+      border: 0.125rem solid #FF0000;
+      background: #5E5E5E;
+      padding: 0.75rem; }
+    #store-hours .store-hours-day .hours-toggle {
+      display: none; }

@@ -1,4 +1,47 @@
 footer
+	padding: 1rem 0
 	background: $black
 	border-top: 0.25rem solid $red
 	color: $white
+	clear: both
+	a
+		color: $light-grey
+	p
+		margin: 0
+	#copyright
+		text-align: center
+		padding: 0.5rem 0
+		clear: both
+		font-size: 0.75rem
+	#contact-info
+		clear: both
+		text-align: center
+		margin-bottom: 1rem
+		border-top: 0.125rem solid $dark-grey
+		border-bottom: 0.125rem solid $dark-grey
+		padding: 0.5rem 0
+		a
+			color: $white
+			text-decoration: none
+			&:hover
+				color: $light-grey
+	#map
+		width: 50%
+		float: left
+		height: 10rem
+	#hours
+		width: 50%
+		float: left
+		margin-bottom: 2rem
+		span.closed
+			color: $red
+		p
+			font-weight: 400
+	iframe
+		width: 50%
+		margin: 0 25%
+		height: auto
+		margin-bottom: 2rem
+		@media screen and (max-width: $break-medium)
+			width: 80%
+			margin: 0 10% 2rem 10%
