@@ -497,6 +497,9 @@ nav#main-nav {
   background: #5E5E5E;
   color: #FFFFFF;
   overflow: hidden; }
+  #main-content #about p {
+    margin-right: 10%;
+    margin-left: 10%; }
   #main-content #about img {
     float: left;
     margin: 0 10%;
@@ -504,6 +507,8 @@ nav#main-nav {
   @media screen and (max-width: 600px) {
     #main-content #about {
       padding-bottom: 2rem; }
+      #main-content #about p {
+        margin: auto; }
       #main-content #about img {
         width: 100%;
         height: auto;
@@ -513,22 +518,28 @@ nav#main-nav {
 #main-content #products {
   clear: both;
   margin-top: 1rem; }
+  #main-content #products p {
+    margin-left: 10%;
+    margin-right: 10%; }
   #main-content #products img#product-image {
     float: right;
     margin: 0 10%;
     margin-bottom: 1rem; }
   #main-content #products img#all-nutrient-logo {
-    width: 40%;
-    margin: auto; }
+    width: 30%;
+    margin-left: 10%; }
   @media screen and (max-width: 600px) {
     #main-content #products {
       padding-bottom: 2rem; }
+      #main-content #products p {
+        margin: auto; }
       #main-content #products img#product-image {
         width: 100%;
         margin: auto;
         margin-bottom: 2rem; }
       #main-content #products img#all-nutrient-logo {
-        width: 100%; } }
+        width: 100%;
+        margin: auto; } }
 
 #services,
 #about,
