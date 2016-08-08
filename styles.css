@@ -464,33 +464,39 @@ nav#main-nav {
   height: auto; }
 
 #main-content #services {
+  margin: 0 10%;
   margin-top: 1rem; }
   #main-content #services .service-table {
-    width: 22%;
+    width: 28%;
     float: left;
     border: 0.125rem solid #5E5E5E;
     box-sizing: border-box;
-    margin-right: 4%;
+    margin-right: 8%;
     padding: 0.75rem;
     margin-bottom: 1rem; }
-    #main-content #services .service-table:last-child {
+    #main-content #services .service-table:nth-child(4) {
       margin-right: 0; }
+    #main-content #services .service-table:nth-child(5) {
+      clear: both; }
     #main-content #services .service-table h3 {
       text-align: center;
       border-bottom: 0.125rem solid #FF0000;
       margin-bottom: 0.5rem;
       padding-bottom: 0.5rem; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 1200px) {
       #main-content #services .service-table {
-        width: 45%; } }
-    @media screen and (max-width: 600px) {
+        width: 45%; }
+        #main-content #services .service-table:nth-child(2n) {
+          margin-right: 10%; }
+        #main-content #services .service-table:nth-child(2n+1) {
+          margin-right: 0; }
+        #main-content #services .service-table:nth-child(5) {
+          clear: none; } }
+    @media screen and (max-width: 890px) {
       #main-content #services .service-table {
         width: 80%;
         margin: 0 10%;
         margin-bottom: 2rem; } }
-    @media screen and (max-width: 700px) {
-      #main-content #services .service-table:nth-child(4) {
-        clear: both; } }
 
 #main-content #about {
   clear: both;
@@ -514,6 +520,11 @@ nav#main-nav {
         height: auto;
         margin: auto;
         margin-bottom: 2rem; } }
+  #main-content #about #stylists a {
+    color: #FFFFFF;
+    text-decoration: none; }
+    #main-content #about #stylists a:hover {
+      color: #E6E6E6; }
 
 #main-content #products {
   clear: both;
