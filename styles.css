@@ -525,6 +525,8 @@ nav#main-nav {
         height: auto;
         margin: auto;
         margin-bottom: 2rem; } }
+  #main-content #about #stylists h3 {
+    padding-left: 2rem; }
   #main-content #about #stylists a {
     color: #FFFFFF;
     text-decoration: none; }
